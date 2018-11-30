@@ -1,0 +1,8 @@
+{
+  "/api":{
+    "target":"https://us-central1-test-fd46a.cloudfunctions.net",
+    "secure": false,
+    "logLevel":"debug"
+  }
+
+}

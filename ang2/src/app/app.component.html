@@ -1,0 +1,35 @@
+<div >
+  <h2>Data Mahasiswa 12</h2>
+</div>
+
+<div *ngFor="let dt of mahasiswaData">
+  Id : {{dt.id}} - Npm : {{dt.npm}} - Nama : {{dt.nama}} - Jurusan : {{dt.jurusan}}
+  <button (click)="hapus(dt.id)">Hapus</button>
+</div>
+
+<br>
+
+<div>
+  <input type="text" placeholder="ID Mahasiswa" #id>
+
+  <input type="text" placeholder="NPM Mahasiswa" #npm>
+
+  <input type="text" placeholder="Nama Mahasiswa" #nama>
+
+  <input type="text" placeholder="Jurusan Mahasiswa" #jur>
+</div>
+
+<div>
+  <input type="text" placeholder="ID Mahasiswa" #id>
+
+  <input type="text" placeholder="NPM Mahasiswa" #npm>
+
+  <input type="text" placeholder="Nama Mahasiswa" #nama>
+
+  <input type="text" placeholder="Jurusan Mahasiswa" #jur>
+</div>
+
+<button (click)="addMahasiswa(id.value,npm.value,nama.value,jur.value)">Add Mahasiswa</button>
+<button (click)="addData()">Add Data</button>
+<button (click)="updateMahasiswa(id.value,npm.value,nama.value,jur.value)">Update Mahasiswa</button>
+
